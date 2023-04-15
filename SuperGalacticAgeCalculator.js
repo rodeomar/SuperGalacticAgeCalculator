@@ -1,31 +1,67 @@
 class SuperGalacticAgeCalculator {
   constructor(age) {
-    this.age = age;
+    this.age = age
+    this.planets = {
+      Mercury: 0.24,
+      Venus: 0.62,
+      Earth: 1,
+      Mars: 1.88,
+      Jupiter: 11.86
+    };
+  }
+
+
+
+  roundDown(value) { // For rounding down the float value
+    return Math.floor(value * 100) / 100;
   }
 
   calculateAgeOnMercury() {
-    // TODO: Implement this method
+    return +(this.age / .24).toFixed(2);
   }
 
   calculateAgeOnVenus() {
-    // TODO: Implement this method
+    return +(this.age / .62).toFixed(2);
+
   }
 
   calculateAgeOnMars() {
-    // TODO: Implement this method
+    return +(this.age / 1.88).toFixed(2);
+
   }
 
   calculateAgeOnJupiter() {
-    // TODO: Implement this method
+    return +(this.age / 11.86).toFixed(2);
+
   }
 
-  calculateYearsSincePastBirthday(planet, birthday) {
-    // TODO: Implement this method
+  calculateYearsSincePastBirthday(birthAge) {
+
+    const earthYearsPassed = this.age - birthAge;
+    const passedOnPlanets = {};
+
+    for (const planet in this.planets) {
+      passedOnPlanets[planet] = parseFloat(
+        this.roundDown(earthYearsPassed / this.planets[planet])
+      );
+    }
+
+    return passedOnPlanets;
   }
 
-  calculateYearsUntilFutureBirthday(planet, age, futureAge) {
-    // TODO: Implement this method
+  calculateYearsUntilFutureBirthday(futureAge) {
+    const earthYearsLeft = futureAge - this.age;
+    const leftOnPlanets = {};
+
+    for (const planet in this.planets) {
+      leftOnPlanets[planet] = parseFloat(
+        this.roundDown(earthYearsLeft / this.planets[planet])
+      );
+    }
+
+    return leftOnPlanets;
+
   }
 }
 
-module.exports =  SuperGalacticAgeCalculator ;
+module.exports = SuperGalacticAgeCalculator;

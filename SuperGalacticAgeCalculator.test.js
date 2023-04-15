@@ -1,5 +1,7 @@
 const SuperGalacticAgeCalculator = require('./SuperGalacticAgeCalculator');
 
+
+
 describe('SuperGalacticAgeCalculator', () => {
   describe('calculateAgeOnMercury', () => {
     it('should return the age in Mercury years', () => {
@@ -44,11 +46,11 @@ describe('SuperGalacticAgeCalculator', () => {
       const calculator = new SuperGalacticAgeCalculator(age);
       const yearsPassed = calculator.calculateYearsSincePastBirthday(birthday);
       expect(yearsPassed).toEqual({
-        earth: 13,
-        mercury: 54.16,
-        venus: 20.96,
-        mars: 6.91,
-        jupiter: 1.09
+        Earth: 13,
+        Mercury: 54.16,
+        Venus: 20.96, //20.96 → 20.97 because toFixed round the number 
+        Mars: 6.91,
+        Jupiter: 1.09
       });
     });
   });                                           
@@ -60,11 +62,11 @@ describe('SuperGalacticAgeCalculator', () => {
       const calculator = new SuperGalacticAgeCalculator(age);
       const yearsRemaining = calculator.calculateYearsUntilFutureBirthday(futureAge);
       expect(yearsRemaining).toEqual({
-        earth: 5,
-        mercury: 20.83,
-        venus: 8.06,
-        mars: 2.65,
-        jupiter: 0.42
+        Earth: 5,
+        Mercury: 20.83, 
+        Venus: 8.06, 
+        Mars: 2.65, 
+        Jupiter: 0.42
       });
     });
   });
