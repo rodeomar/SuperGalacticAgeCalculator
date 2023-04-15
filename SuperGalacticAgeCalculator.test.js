@@ -48,7 +48,7 @@ describe('SuperGalacticAgeCalculator', () => {
       expect(yearsPassed).toEqual({
         Earth: 13,
         Mercury: 54.16,
-        Venus: 20.96, //20.96 → 20.97 because toFixed round the number 
+        Venus: 20.96, 
         Mars: 6.91,
         Jupiter: 1.09
       });
@@ -63,9 +63,9 @@ describe('SuperGalacticAgeCalculator', () => {
       const yearsRemaining = calculator.calculateYearsUntilFutureBirthday(futureAge);
       expect(yearsRemaining).toEqual({
         Earth: 5,
-        Mercury: 20.83, 
-        Venus: 8.06, 
-        Mars: 2.65, 
+        Mercury: 20.83,
+        Venus: 8.06,
+        Mars: 2.65,
         Jupiter: 0.42
       });
     });
