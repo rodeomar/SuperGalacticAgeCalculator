@@ -17,9 +17,9 @@ To run this application, you need to have Node.js installed on your computer. On
 
  1. Clone this repository to your local machine
  2. Navigate to the project directory in your terminal/command prompt
- 3. Run npm install to install the necessary dependencies
- 4. Run npm run build to build the project using webpack
- 5. Run npm test to run the tests and verify that everything is working correctly
+ 3. Run `npm install` to install the necessary dependencies
+ 4. Run `npm run build` to build the project using webpack
+ 5. Run `npm tes`t to run the tests and verify that everything is working correctly
 
 ------------------
 ## **Usage**
