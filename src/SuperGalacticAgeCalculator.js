@@ -1,6 +1,6 @@
 class SuperGalacticAgeCalculator {
   constructor(age) {
-    this.age = age
+    this.age = age;
     this.planets = {
       Mercury: 0.24,
       Venus: 0.62,
