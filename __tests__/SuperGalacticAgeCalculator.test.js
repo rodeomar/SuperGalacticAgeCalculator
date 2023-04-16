@@ -1,4 +1,4 @@
-const SuperGalacticAgeCalculator = require('./SuperGalacticAgeCalculator');
+const SuperGalacticAgeCalculator = require('../src/SuperGalacticAgeCalculator');
 
 
 
