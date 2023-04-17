@@ -128,5 +128,3 @@ function formattedData(data) {
     }
     return table;
 }
-let age = new SuperGalacticAgeCalculator(18);
-console.log(age.calculateYearsUntilFutureBirthday(19));
