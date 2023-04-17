@@ -4,7 +4,7 @@ import SuperGalacticAgeCalculator from '../src/SuperGalacticAgeCalculator.js';
 
 describe('SuperGalacticAgeCalculator', () => {
   describe('calculateAgeOnMercury', () => {
-    it('should return the age in Mercury years', () => {
+    test('should return the age in Mercury years', () => {
       const age = 30;
       const calculator = new SuperGalacticAgeCalculator(age);
       const mercuryAge = calculator.calculateAgeOnMercury();
@@ -13,7 +13,7 @@ describe('SuperGalacticAgeCalculator', () => {
   });
 
   describe('calculateAgeOnVenus', () => {
-    it('should return the age in Venus years', () => {
+    test('should return the age in Venus years', () => {
       const age = 30;
       const calculator = new SuperGalacticAgeCalculator(age);
       const venusAge = calculator.calculateAgeOnVenus();
@@ -22,7 +22,7 @@ describe('SuperGalacticAgeCalculator', () => {
   });
 
   describe('calculateAgeOnMars', () => {
-    it('should return the age in Mars years', () => {
+    test('should return the age in Mars years', () => {
       const age = 30;
       const calculator = new SuperGalacticAgeCalculator(age);
       const marsAge = calculator.calculateAgeOnMars();
@@ -31,7 +31,7 @@ describe('SuperGalacticAgeCalculator', () => {
   });
 
   describe('calculateAgeOnJupiter', () => {
-    it('should return the age in Jupiter years', () => {
+    test('should return the age in Jupiter years', () => {
       const age = 30;
       const calculator = new SuperGalacticAgeCalculator(age);
       const jupiterAge = calculator.calculateAgeOnJupiter();
@@ -40,7 +40,7 @@ describe('SuperGalacticAgeCalculator', () => {
   });
 
   describe('calculateYearsSincePastBirthday', () => {
-    it('should return the years passed on each planet since past birthday', () => {
+    test('should return the years passed on each planet since past birthday', () => {
       const age = 56;
       const birthday = 43;
       const calculator = new SuperGalacticAgeCalculator(age);
@@ -56,7 +56,7 @@ describe('SuperGalacticAgeCalculator', () => {
   });                                           
 
   describe('calculateYearsUntilFutureBirthday', () => {
-    it('should return the years remaining on each planet until future birthday', () => {
+    test('should return the years remaining on each planet until future birthday', () => {
       const age = 56;
       const futureAge = 61;
       const calculator = new SuperGalacticAgeCalculator(age);
