@@ -67,4 +67,6 @@ class SuperGalacticAgeCalculator {
   }
 }
 
-module.exports = SuperGalacticAgeCalculator;
+
+
+export default SuperGalacticAgeCalculator;
