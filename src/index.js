@@ -68,6 +68,7 @@ function showSecondDataInputnHide(past = true) {
 
 
 function calculate() {
+    result.innerText = "";
     const birthdate = new Date(birthdateInput.value);
     const ageInMilliseconds = Date.now() - birthdate.getTime();
     const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365);
@@ -94,7 +95,6 @@ function calculate() {
 
         if (pastDateCheckbox.checked) {
             data = ageCalculator.calculateYearsUntilFutureBirthday(SecondAgeInYears);
-            result.append(data);
         }
         else {
             data = ageCalculator.calculateYearsSincePastBirthday(SecondAgeInYears);
