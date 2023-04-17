@@ -1,4 +1,4 @@
-const SuperGalacticAgeCalculator = require('../src/SuperGalacticAgeCalculator');
+import SuperGalacticAgeCalculator from '../src/SuperGalacticAgeCalculator.js';
 
 
 
